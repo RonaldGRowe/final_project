@@ -34,3 +34,5 @@ receiver = "{}@example.com".format(os.environ.get('USER'))
 subject = "Error - " + error_subject
 body = "Please check your system and resolve the issue as soon as possible."
 message = emails.generate_email(sender, receiver, subject, body)
+if error_subject != []:
+  emails.send_email(message)
