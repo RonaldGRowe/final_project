@@ -16,7 +16,7 @@ def prepare_report_body():
     with open(folder+'/'+file, 'r') as description:
       name = description.readline().strip()
       weight = description.readline().strip()
-      body.append('<br/>'+name+'<br/>'+weight)
+      body.append('<br/>'+'name:'+name+'<br/>'+'weight:'+weight+'<br/>')
   return body
 
 def current_date()
