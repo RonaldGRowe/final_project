@@ -15,6 +15,6 @@ for file in os.listdir(folder):
      feedback_form['weight'] = int(weight.strip(' lbs'))
      feedback_form['description'] = feedback.readline().strip()
      feedback_form['image_name'] = file[:4]+'jpeg'
-     response = request.post("http://35.223.128.250/fruits", data=feedback_form)
+     response = requests.post("http://35.232.195.35/fruits/", data=feedback_form)
      print(response.status_code)
      print(response.raise_for_status())
