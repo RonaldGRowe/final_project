@@ -22,7 +22,7 @@ def prepare_report_body():
 
 def current_date():
   date = datetime.datetime.now()
-  date = date.strftime("%B %d %Y")
+  date = date.strftime("%B %d, %Y")
   return date
 
 
@@ -33,6 +33,6 @@ if __name__ == "__main__":
   sender = "automation@example.com"
   receiver = "{}@example.com".format(os.environ.get('USER'))
   subject = "Upload Completed - Online Fruit Store"
-  email_body = "All fruits are uploaded to our website successfully. A detailed list is attached to this email"
+  email_body = "All fruits are uploaded to our website successfully. A detailed list is attached to this email."
   message = emails.generate_email_with_attachment(sender, receiver, subject, email_body, "tmp/processed.pdf")
   emails.send_email(message)
