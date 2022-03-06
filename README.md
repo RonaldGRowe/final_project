@@ -20,3 +20,4 @@ at a set time by a Cron job and to email an error message when an issue arises.
 - Understanding of time used to automate a task vs time saved, is it worth the effort?
 - Cron job understanding and use
 - Multiple Python libraries used
+- Monitor disk, cpu, and memory usage
