@@ -2,7 +2,7 @@ Google Python Course Final Project
 ==================================
 Collection of programs to complete necessary tasks to complete python automation certification lab.
 
-Consist of a script to change image type, specifciations and rename file.
+Consist of a script to change image type, specifciations and rename the new files.
 Contains file to gererate information to post to a website form using requests module.
 Python program to send emails with attachments and without.
 Reports script to generate pdf and store in temp file.
